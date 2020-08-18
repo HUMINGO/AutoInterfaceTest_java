@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="run">
+    <test name="runAll">
+        <classes>
+            <class name="com.imooc.testNG.groups.GroupOnClass"/>
+            <class name="com.imooc.testNG.groups.GroupOnClass2"/>
+            <class name="com.imooc.testNG.groups.GroupOnClass3"/>
+        </classes>
+    </test>
+
+    <test name="runOnly">
+        <groups>
+            <run>
+                <include name="student"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.imooc.testNG.groups.GroupOnClass"/>
+            <class name="com.imooc.testNG.groups.GroupOnClass2"/>
+            <class name="com.imooc.testNG.groups.GroupOnClass3"/>
+        </classes>
+    </test>
+
+</suite>

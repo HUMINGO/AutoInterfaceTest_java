@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Thread" parallel="classs" thread-count="3">
+    <test name="multiThread">
+        <classes name="aaa">
+            <class name="com.imooc.testNG.multiThread.MultiThreadTestOnXml"/>
+        </classes>
+    </test>
+
+    <test name="multiThread2">
+        <classes name="bbb">
+            <class name="com.imooc.testNG.multiThread.MultiThreadTestOnXml"/>
+        </classes>
+    </test>
+</suite>
