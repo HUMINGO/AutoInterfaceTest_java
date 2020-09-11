@@ -1,0 +1,29 @@
+[
+  {
+    "description": "这是一个不带参数的mock例子",
+    "request": {
+      "uri": "/getDemo1",
+      "method": "get"
+    },
+    "response":{
+      "text": "这是一个不带参数的mock例子"
+    }
+
+  },
+
+  {
+    "description": "这是一个带有参数的mock例子",
+    "request": {
+      "uri": "/getWithParam",
+      "method": "get",
+      "queries": {
+        "username": "jack",
+        "age": "34"
+      }
+    },
+    "response": {
+      "text": "jack今年34岁了"
+    }
+
+  }
+]

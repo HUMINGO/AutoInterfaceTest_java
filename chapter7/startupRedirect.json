@@ -1,0 +1,19 @@
+[
+  {
+    "description": "这是一个重定向的接口",
+    "request": {
+      "uri": "/get/demo"
+    },
+    "redirectTo": "/get/reachTo"
+  },
+
+  {
+    "description": "这是一个重定向的接口",
+    "request": {
+      "uri": "/get/reachTo"
+    },
+    "response": {
+      "text": "this is a test"
+    }
+  }
+]

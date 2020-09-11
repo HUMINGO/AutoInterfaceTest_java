@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="autoInterface" />
+        <module name="chapter6" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="14">
       <module name="autoInterface" target="14" />
+      <module name="chapter6" target="14" />
     </bytecodeTargetLevel>
   </component>
 </project>

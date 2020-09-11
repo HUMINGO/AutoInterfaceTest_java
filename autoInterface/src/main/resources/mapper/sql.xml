@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 命名空间mapper,如果有多个mapper文件，这个必须唯一 -->
+
+<mapper namespace="com.imooc.model">
+    <select id="selectOne" parameterType="Integer" resultType="com.imooc.model.LoginCase">
+        select * from loginCase where id = #{id}
+    </select>
+
+<!--  获取到用户的列表  -->
+    <select id="getUserList" parameterType="String" resultType="com.imooc.model.User2">
+        select * from user2 where username = #{username}
+    </select>
+
+    <delete id="deleteOne" parameterType="Integer">
+        delete from users where id = #{id}
+    </delete>
+</mapper>
