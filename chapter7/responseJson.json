@@ -1,0 +1,72 @@
+[
+  {
+    "description": "这是一个带cookies的get请求",
+    "request": {
+      "uri": "/getCookies",
+      "method": "get"
+
+    },
+    "response": {
+      "text":"这是一个带cookies的get请求",
+      "cookies": {
+        "login": "true"
+
+      }
+    }
+  },
+  {
+    "description": "这是一个不带cookies的get请求，返回json格式的数据",
+    "request": {
+      "uri": "/get/json",
+      "method": "get"
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "jack": "this is for you.",
+        "status": "1"
+      }
+    }
+  },
+
+  {
+    "description": "这是一个带cookies的get请求，返回json格式的数据",
+    "request": {
+      "uri": "/get/jsonType",
+      "method": "get",
+      "cookies": {
+        "login": "true"
+      }
+
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "jack": "this is for you.",
+        "status": "1"
+      }
+    }
+  },
+
+  {
+    "description": "这是一个带cookies的get请求",
+    "request": {
+      "uri": "/get1/withCookies",
+      "method": "get",
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "username": "jack",
+        "age": "23"
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "jack": "success",
+        "status": "1"
+      }
+    }
+  }
+]
